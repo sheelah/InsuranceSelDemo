@@ -1,0 +1,349 @@
+/* Styles.css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #454A45;
+    font-size: 1em;
+}
+p {
+    font-size: 0.95em;
+}
+h1 {
+    font-size: 2.8em;
+    margin: 10px;
+    padding-top: 15px;
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+h2 {
+    font-size: 2em;
+    padding: 10px;
+    letter-spacing: -0.05em;
+}
+h3 {
+    font-size: 1.3em;
+    padding: 10px;
+}
+h4 {
+    font-size: 1.15em;
+}
+h5 {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+li {
+    list-style-type: none;
+}
+label {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+nav {
+    display: none;
+    margin-bottom: 10px;
+}
+nav li {
+    display: inline;
+}
+a {
+    font-size: 0.8em;
+    color: #454A45;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+    color: #2E3D7D;
+}
+a.disabled {
+    text-decoration: none;
+}
+a.button {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #2C2E53;
+    margin: 0 5px 20px 370px;
+}
+#contentWrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+#viewPort {
+    margin: 0 auto;
+    width: 550px;
+}
+#availablePlans, #limitedCoveragePlans, #compCoveragePlans, #personalDetails,
+    #confirmation {
+    lpadding-bottom: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #CBDFF2;
+    background: rgb(248,250,252);
+    background: -moz-linear-gradient(top, rgba(248,250,252,1) 0%,
+        rgba(243,246,249,1) 0%, rgba(224,238,250,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%,rgba(248,250,252,1)), color-stop(0%,rgba(243,246,249,1)),
+        color-stop(100%,rgba(224,238,250,1)));
+    background: -webkit-linear-gradient(top, rgba(248,250,252,1) 0%,
+        rgba(243,246,249,1) 0%,rgba(224,238,250,1) 100%);
+    background: -o-linear-gradient(top, rgba(248,250,252,1) 0%,
+        rgba(243,246,249,1) 0%,rgba(224,238,250,1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,250,252,1) 0%,
+        rgba(243,246,249,1) 0%,rgba(224,238,250,1) 100%);
+    background: linear-gradient(to bottom, rgba(248,250,252,1) 0%,
+        rgba(243,246,249,1) 0%,rgba(224,238,250,1) 100%);
+}
+.planDetail, .button, #send {
+    margin: 25px;
+    padding: 30px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #949494;
+    background: rgb(254,255,255);
+    background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%,
+        rgba(203,213,219,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(203,213,219,1)));
+    background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,
+        rgba(203,213,219,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(203,213,
+        219,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(203,213,
+        219,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(203,213,219,1) 100%);
+}
+.planDetail h3 {
+    margin: 5px;
+    padding: 5px;
+}
+.planDetail p {
+    margin: 10px;
+}
+.button, #send {
+    border: 2px solid #969596;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #2C2E53;
+    font-family: 'Verdana', sans-serif;
+    padding: 10px 25px;
+}
+.planDetail h3 {
+}
+.planDetail button {
+    margin: 0 0 5px 370px;
+}
+.button:active, #send:active {
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: #limitedPlansscale(0.95);
+    -webkit-box-shadow: 5px 5px 5px rgba(50, 50, 52, 0.75);
+    -moz-box-shadow: 5px 5px 5px rgba(50, 50, 52, 0.75);
+    box-shadow: 5px 5px 5px rgba(50, 50, 52, 0.75);
+}
+.button:hover, #send:hover {
+    cursor: pointer;
+}
+.planDetailTitle {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgb(232,238,244);
+    background: -moz-linear-gradient(top, rgba(232,238,244,1) 0%,
+        rgba(211,222,235,1) 0%, rgba(150,197,236,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%,rgba(232,238,244,1)), color-stop(0%,rgba(211,222,235,1)),
+        color-stop(100%,rgba(150,197,236,1)));
+    background: -webkit-linear-gradient(top, rgba(232,238,244,1) 0%,
+        rgba(211,222,235,1) 0%,rgba(150,197,236,1) 100%);
+    background: -o-linear-gradient(top, rgba(232,238,244,1) 0%,
+        rgba(211,222,235,1) 0%,rgba(150,197,236,1) 100%);
+    background: -ms-linear-gradient(top, rgba(232,238,244,1) 0%,
+        rgba(211,222,235,1) 0%,rgba(150,197,236,1) 100%);
+    background: linear-gradient(to bottom, rgba(232,238,244,1) 0%,
+        rgba(211,222,235,1) 0%,rgba(150,197,236,1) 100%);
+    -moz-box-shadow: 5px 5px 10px #888;
+    -webkit-box-shadow: 5px 10px 2px #888;
+    box-shadow: 5px 5px 10px #888;
+}
+.coverageDetailTitle {
+    padding: 0.5em 0 0.5em 1.2em;
+    background: rgb(254,254,254);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 19%,
+        rgba(226,226 ,226,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(254,254,254,1)), color-stop(100%,rgba(226,226,226,1)));
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 19%,
+        rgba(226,226,226,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,254,254,1) 19%,
+        rgba(226,226,226,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,254,254,1) 19%,
+        rgba(226,226,226,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 19%,
+        rgba(226,226,226,1) 100%);
+}
+#limitedCoveragePlans {
+    display: none;
+}
+#limitedCoveragePlans, #compCoveragePlans, #personalDetails, #confirmation {
+    border: 2px solid #D7DDDE;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 0;
+}
+#limitedCoveragePlans div:nth-child(odd),
+    #compCoveragePlans div:nth-child(odd) {
+    background: rgb(212,212,212);
+    background: -moz-linear-gradient(top, rgba(212,212,212,1) 0%, rgba(182,182,182,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(212,212,212,1)), color-stop(100%,rgba(182,182,182,1)));
+    background: -webkit-linear-gradient(top, rgba(212,212,212,1) 0%,rgba(182,182,182,1) 100%);
+    background: -o-linear-gradient(top, rgba(212,212,212,1) 0%,rgba(182,182,
+        182,1) 100%);
+    background: -ms-linear-gradient(top, rgba(212,212,212,1) 0%,rgba(182,182,182,1) 100%);
+    background: linear-gradient(to bottom, rgba(212,212,212,1) 0%,rgba(182,182,182,1) 100%);
+}
+#limitedA {
+    padding-bottom: 5px;
+}
+#limitedA, #limitedB, #compA, #compB, #compC {
+    border-bottom: 20px solid #E6E8EB;
+}
+#limitedA div.planIcon, #limitedB div.planIcon, #compA div.planIcon,
+    #compB div.planIcon, #compC div.planIcon {
+    display: inline-block;
+    font-weight: bold;
+    width: 130px;
+    margin: 30px 0 5px 20px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    border: 2px solid #46464D;
+    background: rgb(96,108,136);
+    background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%,
+        rgba(63,76,107,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(96,108,136,1)), color-stop(100%,rgba(63,76,107,1)));
+    background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+    background: -o-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+    background: -ms-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+    background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#compCoveragePlans {
+    display: none;
+}
+.planText {
+    display: inline-block;
+    width: 330px;
+    margin-top: 35px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.planText p:first-child {
+    font-weight: bold;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+#limitedA .button, #limitedB .button, #compA .button, #compB .button,
+    #compC .button {
+    display: block;
+    margin: 0 10px 10px 440px;
+}
+.formWrapper {
+    width: 370px;
+    margin: 20px 20px 20px 40px;
+    border: 2px solid #949494;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #D7D9DB;
+}
+.formWrapper form {
+    margin: 10px auto;
+}
+.formWrapper input {
+    float: right;
+    margin-right: 60px;
+    width: 170px;
+    border: 2px solid #B1B3BA;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.formWrapper form li {
+    margin: 0 0 8px 20px;
+}
+.formWrapper h5 {
+    padding: 6px 0 6px 6px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #949494;
+}
+#userInfo {
+    position: relative;
+    padding-bottom: 65px;
+}
+#userInfo button {
+    margin-left: 160px;
+    padding: 5px 10px;
+}
+#personalDetails {
+    display: none;
+}
+.red {
+    color: #F51137;
+}
+#personalDetails {
+    border: 2px solid #B1B3BA;
+}
+#personalDetails .coverageDetailTitle {
+    border-bottom: 2px solid #B1B3BA;
+}
+#userControlPanel {
+    margin: 20px 20px 20px 40px;
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+}
+#confirmation {
+    display: none;
+}
+#confirmation h4 {
+    padding: 20px 0 20px 20px;
+}
+#breadcrumbs {
+    font-size: 0.7em;
+}
+#userControlPanel .note {
+    font-size: 0.6em;
+    clear: right;
+}
+#send {
+    margin: 0;
+    padding: 10px 15px;
+    float: right;
+}
+#userInfo form {
+    margin-bottom: 30px;
+}
+#userInfo h5 img {
+    float: right;
+    height: 16px;
+    padding-right: 4px;
+}
+#userInfo #userForm1 a {
+    display: none;
+}
+input.date {
+    background-image: url("../images/calendar.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}

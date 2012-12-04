@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Travel Insurance Selection Tool</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div id="contentWrapper">
+        <h1>Travel Insurance Plans</h1>
+        <div id="viewPort">
+            <nav>
+                <ul>
+                    <li><a href="#availablePlans">Plans</a></li>
+                </ul>
+            </nav>
+            <!-- End nav -->
+            <div id="availablePlans" class="screen">
+                <h2 class="planDetailTitle">Available Plans</h2>
+                <div class="planDetail">
+                    <h3>Limited Coverage</h3>
+                    <p>Limited coverage plan provides the basic protection, and may not be adequate.  It may cost you less, but the
+                    coverage is limited to a pre-defined clause of fixed-amount
+                    charges.  Read the policy details for full benefit and coverage information.</p>
+                    <a class="button" id="limitedPlans" name="limitedPlans"
+                    href="#limitedCoveragePlans">Select</a>
+                </div>
+                <!-- End planDetail class div -->
+                <div class="planDetail">
+                    <h3>Comprehensive Coverage</h3>
+                    <p>These plans offer more flexible coverage.  Most of these plans work like a PPO-style 80-20% plan.  This means
+                    the insured have to pay 20% of the cost for the first $5,000 per policy period.  The policy covers the remaining 80%.</p>
+                    <a class="button" id="compPlans" name="compPlans"
+                    href="#compCoveragePlans">Select</a>
+                </div>
+                <!-- End planDetail class div -->
+            </div>
+            <!-- End availablePlans div -->
+            <div id="limitedCoveragePlans" class="screen">
+                <h3 class="coverageDetailTitle">Limited Coverage</h3>
+                <div id="limitedA">
+                    <div class="planIcon">
+                        <h4>Limited Plan A</h4>
+                    </div>
+                    <!-- End planIcon class div -->
+                    <div class="planText">
+                        <h5>Limited Plan A</h5>
+                        <p>Limited Plan A provides basic medical coverage for non-US citizens who come to the US for business, pleasure, to study, or to immigrate with a maximum coverage of $120,000.</p>
+                   </div>
+                   <!-- End planText class div -->
+                   <a class="button" id="selectLimA"
+                    name="Limited Coverage Plan A" href="#personalDetails">Select</a>
+                </div>
+                <!-- End limitedA div -->
+                <div id="limitedB">
+                    <div class="planIcon">
+                        <h4>Limited Plan B</h4>
+                    </div>
+                    <!-- End planIcon class div -->
+                    <div class="planText">
+                        <h5>Limited Plan B</h5>
+                        <p>Limited Plan B provides basic medical coverage for non-US citizens who come to the US for business, pleasure, to study, or to immigrate with a maximum coverage of $140,000.</p>
+                    </div>
+                    <!-- End planText class div -->
+                    <a class="button" id="selectLimB"
+                    name="Limited Coverage Plan B" href="#personalDetails">Select</a>
+                </div>
+                <!-- End limitedB div -->
+            </div>
+            <!-- End limitedCoveragePlans div -->
+            <div id="compCoveragePlans" class="screen">
+                <h3 class="coverageDetailTitle">Comprehensive Coverage</h3>
+                <div id="compA">
+                    <div class="planIcon">
+                        <h4>Comprehensive Plan A</h4>
+                    </div>
+                    <!-- End planIcon class div -->
+                    <div class="planText">
+                        <h5>Comprehensive Plan A</h5>
+                        <p>Plan A offers medical coverage and emergency services to individuals and families travelling outside their home countries.</p>
+                   </div>
+                   <!-- End planText class div -->
+                   <a class="button" id="selectCompA"
+                   name="Comprehensive Coverage Plan A"
+                   href="#personalDetails">Select</a>
+                </div>
+                <!-- End compA div -->
+                <div id="compB">
+                    <div class="planIcon">
+                        <h4>Comprehensive Plan B</h4>
+                    </div>
+                    <!-- End planIcon class div -->
+                    <div class="planText">
+                        <h5>Comprehensive Plan B</h5>
+                        <p>Plan B offers medical coverage and emergency services to individuals and families travelling outside their home countries.  The plan pays 75% of eligible expenses to the selected medical maximum.</p>
+                    </div>
+                    <!-- End planText class div -->
+                    <a class="button" id="selectCompB"
+                    name="Comprehensive Coverage Plan B"
+                    href="#personalDetails">Select</a>
+                </div>
+                <!-- End compB div -->
+                <div id="compC">
+                    <div class="planIcon">
+                        <h4>Comprehensive Plan C</h4>
+                    </div>
+                    <!-- End planIcon class div -->
+                    <div class="planText">
+                        <h5>Comprehensive Plan C</h5>
+                        <p>Plan C offers medical coverage and emergency services to individuals and families travelling outside their home countries.</p>
+                    </div>
+                    <!-- End planText class div -->
+                    <a class="button" id="selectCompC"
+                    name="Comprehensive Coverage Plan C"
+                    href="#personalDetails">Select</a>
+                </div>
+                <!-- End compC div -->
+            </div>
+            <!-- End compCoveragePlans div -->
+            <div id="personalDetails" class="screen">
+                <h3 class="coverageDetailTitle">Personal Details</h3>
+                <div id="userInfo">
+                    <div id="userForm1" class="formWrapper">
+                        <h5 class="coverageDetailTitle">Insured #1
+                        <a href="delete"><img src="images/remove.png"></a>
+                        </h5>
+                        <form id="userData1">
+                            <ul>
+                                <li><label>Name: <span class="red">*</span>
+                                <input autofocus type="text" name="name"
+                                class="required"></label>
+                                </li>
+                                <li><label>Address: <span class="red">*</span>
+                                <input type="text" name="address"
+                                class="required"></label></li>
+                                <li><label>&nbsp;<input type="text"
+                                name="address2"></label></li>
+                                <li><label>Start date: <span class="red">*
+                                </span>
+                                <input type="text" name="start date"
+                                class="date required">
+                                </label></li>
+                                <li><label>End date: <span class="red">*
+                                </span>
+                                <input type="text" name="end date"
+                                class="date required"></label></li>
+                            </ul>
+                        </form>
+                    </div>
+                    <!-- End formWrapper class div -->
+                    <div id="userControlPanel">
+                        <input type="button" id="send" value="Submit">
+                        <a href="add-user">+Add more insured</a>
+                        <p class="note">Note: A maximum of 5 people can be part of any policy.</p>
+                    </div>
+                    <!-- End userControlPanel div -->
+                </div>
+                <!-- End userInfo div -->
+            </div>
+            <!-- End personalDetails -->
+            <div id="confirmation" class="screen">
+                <h3 class="coverageDetailTitle">Confirmation</h3>
+            </div>
+            <!-- End confirmation div -->
+        </div>
+        <!-- End viewPort div -->
+    </div>
+    <!-- End contentWrapper div -->
+</body>
+<script src="scripts/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<script
+    src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js">
+</script>
+<script src="scripts/generate_screens.js"></script>
+</html>
